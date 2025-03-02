@@ -7,4 +7,6 @@ services:
     instance_types:
       - nano
     run_command: python bot.py
-    healthchecks: []
+    ports:
+      - port: 8000
+        protocol: tcp
