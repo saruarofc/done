@@ -2,10 +2,8 @@ name: telegram-bot
 services:
   - name: bot
     git:
-      repository: saruarofc/done # e.g., "johndoe/telegram-bot"
+      repository: saruarofc/done
       branch: main
-    ports:
-      - port: 8080
     instance_types:
-      - nano # Free tier
+      - nano
     run_command: python bot.py
